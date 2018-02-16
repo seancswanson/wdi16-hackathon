@@ -10,7 +10,8 @@ import Login from './auth/Login.js';
 import Profile from './Profile.js';
 import Signup from './auth/Signup.js';
 import Search from './Search.js';
-
+import AddLocation from './location/AddLocation.js';
+import ShowLocation from './location/ShowLocation.js';
 class App extends Component {
   constructor(props){
     super(props);
@@ -21,7 +22,6 @@ class App extends Component {
   componentDidMount = () => {
     this.getUser();
   }
-
   getUser = () => {
     // If there is a token in localStorage
     let token = localStorage.getItem('mernToken');
@@ -53,21 +53,18 @@ class App extends Component {
       })
     }
   }
-
   setFlash = (t, msg) => {
     this.setState({
       flash: msg,
       flashType: t
     });
   }
-
   cancelFlash = () => {
     this.setState({
       flash: '',
       flashType: ''
     });
   }
-
   render() {
     return (
       <div className="App">
@@ -83,8 +80,12 @@ class App extends Component {
                 () => (<Signup user={this.state.user} setFlash={this.setFlash} updateUser={this.getUser} />)} />
               <Route path="/profile" component={
                 () => (<Profile user={this.state.user} setFlash={this.setFlash} />)} />
-                  <Route path="/search" component={
+              <Route path="/search" component={
                 () => (<Search user={this.state.user} setFlash={this.setFlash} />)} />
+              <Route path="/add" component={
+                () => (<AddLocation user={this.state.user} setFlash={this.setFlash} />)} />    
+              <Route path="/show" component={
+                () => (<ShowLocation user={this.state.user} setFlash={this.setFlash} />)} />                      
             </div>
           </div>
         </Router>
@@ -93,5 +94,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
