@@ -26,7 +26,9 @@ class Nav extends Component {
             <div className="nav">
               <div className="nav-header">
                 <div className="nav-title">
-                  SH
+                <Link to="/">
+                  <img className="img--nav__logo" src='./../icon-skate.png' />
+                  </Link>
                 </div>
               </div>
               <div className="nav-btn">
