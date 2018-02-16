@@ -143,6 +143,16 @@ z-index: 999;}
 }
 /* Landing */
 
+.image {
+  width: 100%;
+  height:500px;
+  background-image: url("https://www.walldevil.com/wallpapers/w03/868279-architecture-buildings-cityscapes-grayscale-monochrome.jpg");
+  z-index: -1;
+  opacity: .3;
+  position: relative;
+  top: -60px;
+  border-bottom:3px solid rgba(0,0,0,1);
+}
 
 .h1--landing__hero {
   font-weight: 500;
@@ -150,14 +160,17 @@ z-index: 999;}
 
 .div--wrapper__landing a{
   font-size: 20px;
+  position: relative;
+  top: -420px;
 }
 
 .div--wrapper__landing img {
+  position: relative;
+  top: -420px;
   max-width: 40vw;
   min-width: 330px;
   padding: 10px;
   width: auto;
-  margin-bottom: 20px;
   display: block;
   margin: 0 auto 20px auto;
 }
@@ -165,9 +178,10 @@ z-index: 999;}
 .a--landing__shred {
   width: 140px !important;
   border-radius: 5px;
+  border: 1px solid black;
   padding: 10px 20px;
   margin: 15px !important;
-  background: #D6D8D4;
+  background: #9A9B98;
   color: black !important;
   display: inline-block;
   font-size: 23px !important;
@@ -175,10 +189,11 @@ z-index: 999;}
 
 .a--landing__join {
   width: 140px !important;
+  border: 1px solid black;
   border-radius: 5px;
   margin: 15px;
   padding: 10px 20px;
-  background: #D6D8D4;
+  background: #9A9B98;
   color: black !important;
   display: inline-block;
   font-size: 23px !important;
@@ -264,7 +279,34 @@ input[type="text" i] {
   width: 100%;
 }
 
+#unlock-now {
+  position: relative;
+  top: -41px;
+  padding: 10px 70px;
+  height: 40px !important;
+  font-size: 24px !important;
+  color: white !important;
+  background: rgba(0,0,0,.8) !important;
+  animation: hide 1s linear;
+  animation-delay: 5s;
+}
 
+@-webkit-keyframes hide {
+  0%   { display: initial;}
+  100% {display: none;}
+}
+@-moz-keyframes hide {
+  0%   { display: initial;}
+  100% {display: none;}
+}
+@-o-keyframes hide {
+  0%   { display: initial;}
+  100% {display: none;}
+}
+@keyframes hide {
+  0%   { display: initial;}
+  100% {display: none;}
+}
 
 .div--container__ul {
   height: 260px;

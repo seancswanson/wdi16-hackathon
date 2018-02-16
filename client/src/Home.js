@@ -5,6 +5,7 @@ class Home extends Component {
   render(){
     return (
       <div className="div--wrapper__landing">
+      <div className="image"></div>
         <img src="hero.png" />
         <Link className="a--landing__shred" to="/search">Shred</Link>
         <Link className="a--landing__join" to="/signup">Join</Link>

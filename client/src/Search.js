@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import SimpleMap from './SimpleMap.js';
 
 class Search extends Component {
+
+
   render() {
+
  var shredLoactions = [
                       {
                         name: "Judkins Skatepark",
@@ -93,13 +96,14 @@ class Search extends Component {
         <a href="#"><span><i className="fa fa-location-arrow"></i>Share</span></a>
         <a href="#"><span><i className="fa fa-filter"></i>Filters</span></a>
         <a href="#"><span><i className="fa fa-ellipsis-h"></i>More</span></a>
-        </div>
         <div className="div--container__ul">
         <span className="span--nearby">Nearby Spots</span>
         <ul className="ul--nearbyplaces">
       { nearbyPlaces }
       </ul>
       </div>
+        </div>
+          <a href="#" id="unlock-now">Unlock for $ .99/mo</a>
         </div>
         </div>
       )
