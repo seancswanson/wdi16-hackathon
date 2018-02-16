@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Home extends Component {
   render(){
     return (
-        <p>This is a home page. You probably ought to write something here</p>
+        <h1 className="h1--landing__hero">ShredShare</h1>
       );
   }
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import Logout from '../auth/Logout.js';
 import { Link } from 'react-router-dom';
 
@@ -23,14 +22,27 @@ class Nav extends Component {
 
     return(
         <div>
-          <nav className="nav">
-            <a href="/">Home</a>
-            {links}
+          <nav>
+            <div className="nav">
+              <div className="nav-header">
+                <div className="nav-title">
+                  SH
+                </div>
+              </div>
+              <div className="nav-btn">
+                <label htmlFor="nav-check">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+              </div>
+              <input type="checkbox" id="nav-check" />
+              <div className="nav-links">
+                <span><Link to="/search">Explorer</Link></span>
+                 {links}  
+              </div>
+            </div>
           </nav>
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome to MERN Stack Boilerplate!</h1>
-          </header>
         </div>
       );
   }
