@@ -37,11 +37,13 @@ class Login extends Component {
   render() {
     let form = '';
     if(this.props.user){
-      return (<Redirect to="/profile" />);
+      return (<Redirect to="/search" />);
     }
     else {
       form = (<form onSubmit={this.handleSubmit}>
                 <div>
+                <h1>Come Skate With Us!</h1>
+                <h3>Discover Secret Spots for $.99/mo</h3>
                   <input name="Email"
                        placeholder="Enter your email"
                        value={this.state.email}

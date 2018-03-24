@@ -4,7 +4,8 @@ class Profile extends Component {
   render(){
     if(this.props.user && this.props.user.name){
       return (<div>
-          <h2>HELLO AGAIN {this.props.user.name}!</h2>
+        <img className="center" src="https://image.flaticon.com/icons/svg/64/64572.svg" />
+          <h2>Yo, {this.props.user.name}!</h2>
           <h4>Your email is {this.props.user.email}</h4>
         </div>);
     }

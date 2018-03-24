@@ -40,7 +40,7 @@ class Nav extends Component {
               </div>
               <input type="checkbox" id="nav-check" />
               <div className="nav-links">
-                <span><Link to="/search">Explorer</Link></span>
+                <span><Link to="/search">Map</Link></span>
                  {links}  
               </div>
             </div>

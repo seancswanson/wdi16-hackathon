@@ -10,7 +10,7 @@ class Home extends Component {
         <Link className="a--landing__shred" to="/search">Shred</Link>
         <Link className="a--landing__join" to="/signup">Join</Link>
         <p><Link className="a--landing__login" to="/login">Already registered?</Link></p>
-        <h1>"ShredShare has helped me scope out the sickest spots in the city and connect me with fellow skaters! - Eric Koston"</h1>
+        <h1>"ShredShare has helped me scope out the sickest spots in the city and connect me with fellow skaters!" - Eric Koston</h1>
       </div>
       );
   }
